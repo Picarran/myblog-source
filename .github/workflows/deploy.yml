@@ -1,0 +1,43 @@
+name: Deploy Hexo Blog
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout
+      - uses: actions/checkout@v4
+
+      # 2. Setup Node
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 25
+
+      # 3. Install dependencies
+      - run: npm ci
+
+      # 4. Install Hexo CLI
+      - run: npm install -g hexo-cli
+
+      # 5. Build site
+      - run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          hexo clean
+          hexo g
+
+      # 6. Setup SSH
+      - name: Setup SSH
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+
+      # 7. Deploy using SSH
+      - name: Deploy Hexo
+        run: hexo d
