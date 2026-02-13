@@ -13,18 +13,18 @@ info:
   # Site Logo
   logo: assets/images/Hexo-Theme-MEOW.png
   # Author Avatar
-  avatar: 
+  avatar: https://avatars.githubusercontent.com/u/144198924?s=400&u=6fadf665071b5838de7a9fb5253344b0a6c3a76a&v=4
   # Datetime of when this website was built
-  start_date: 2024-04-02 22:16:20 # Format should be as same as date_format and time_format of root config
+  start_date: 2026-02-04 00:00:00 # Format should be as same as date_format and time_format of root config
 
 # Theme Color & Mode
 color:
   # Light Mode
   light:
-    theme_color: '#FFB347'
+    theme_color: "#FFB347"
   # Dark Mode
   dark:
-    theme_color: '#88C0ED'
+    theme_color: "#88C0ED"
   # Light/Dark Mode Configuration
   mode:
     default: light # Default color mode, light or dark
@@ -36,8 +36,8 @@ global:
     type: uc # Icon Style Type, uc or ta or other custom collection
   selectable: true # Whether users can select text
   # Change page title when page onblur, false or onblur title text
-  onblur_title: "Please Come Back～✧(´▽`ʃ♡ƪ)"
-  mouse_click_style: false # Whether to display colorful heart when clicking
+  onblur_title: "再回来看看叭～✧(´▽ʃ♡ƪ)"
+  mouse_click_style: true # Whether to display colorful heart when clicking
 
 # Font Customization
 font:
@@ -51,11 +51,11 @@ font:
 
 # Navigation Bar
 menu:
-  # articles || uc-article:
-  #   archives: /archives || uc-archive
-  #   categories: /categories || uc-category
-  #   tags: /tags || uc-tag
-  # about: /about || uc-about
+  articles || uc-article:
+    archives: /archives || uc-archive
+    categories: /categories || uc-category
+    tags: /tags || uc-tag
+  about: /about || uc-about
 
 # Search Function
 search:
@@ -85,14 +85,14 @@ banner:
   # Banner title
   title:
     enable: true # Whether to show title
-    text: 「 MEOW 」 # Title text
+    text: Picarran 的小窝 # Title text
   # Banner subtitle at homepage
   subtitle:
-    enable: false # Whether to show subtitle
+    enable: true # Whether to show subtitle
     # Subtitle text (Data type: Array)
     text:
-      # - "A cute and responsive theme for Hexo"
-    effect: false # Typewriter effect, true or false(only show the first text).
+      - "泥嚎泥嚎泥嚎呀！！！"
+    effect: true # Typewriter effect, true or false(only show the first text).
     type_speed: 100 # Typing speed (ms)
     back_speed: 150 # Backing speed (ms)
     start_delay: 500 # Start delay (ms)
@@ -102,8 +102,8 @@ banner:
     fade_out: true # Whether to enable fade out effect
     shuffle: false # Whether to shuffle the text list
   title_color: # Title color under light/dark mode
-    light: '#fff'
-    dark: '#e0e0e0'
+    light: "#fff"
+    dark: "#e0e0e0"
 
 # Sidebar At Homepage
 sidebar:
@@ -116,23 +116,25 @@ sidebar:
     type: author # Which type of avatar to show, site or author
     status: # Status next to the avatar
       emoji: 🐱 # false or emoji
-      desc: # Describe the status
-    link: # Url for image clicking
-    desc: # Describe yourself or say something
+      desc: 元气满满～ # Describe the status
+    link: /aboutme # Url for image clicking
+    desc: 日常记录，啥都写写 # Describe yourself or say something
     statistic: true # Whether to show the total number of articles, categories and tags
     social: # Social profiles
-      enable: false # Whether to show social module
+      enable: true # Whether to show social module
       list: # Social name: social icon || social link
-        # email: brand-mail || contact@jumao.simplelogin.com
-        # github: brand-github || https://github.com/chanwj
+        email: brand-mail || 2689825705@qq.com
+        github: brand-github || https://github.com/Picarran
   # Show announcement card, false or announcement text, markdown available
-  announcement: 
+  announcement: |
+    先随便写点～
   # Links card
   links:
-    enable: false # Whether to show additional links
+    enable: true # Whether to show additional links
     title: Links # The title of links card
     list: # List of links. link name: url
       # 📦 Meow's Repository: https://github.com/chanwj/hexo-theme-meow
+      关于我: /aboutme
   # Categories card
   categories:
     enable: true # Whether to show categories card
@@ -162,27 +164,27 @@ category:
   icon: assets/images/Hexo-Theme-MEOW.png # Show icon at the right bottom corner
   show_count: false # Whether to show posts count of each category
 
-# Tags Customization
+# Tags Cu2tomization
 tag:
   style: 1 # 1: normal, 2: tagcloud
   show_count: true # Whether to show posts count of each tag
   color: true # Whether to apply font color to tags (tagcloud function)
-  start_color: '#D3D3D3' # The lightest color of tags (tagcloud function)
-  end_color: '#FFB347' # The darkest color of tags (tagcloud function)
+  start_color: "#D3D3D3" # The lightest color of tags (tagcloud function)
+  end_color: "#FFB347" # The darkest color of tags (tagcloud function)
 
 # Posts Customization
 post:
   excerpt_length: 200 # Max length of auto excerpt
-  wordcount: false # Whether to show post wordcount
+  wordcount: true # Whether to show post wordcount
   # Reading time
   min2read:
-    enable: false # Whether to show estimated reading time
+    enable: true # Whether to show estimated reading time
     cn: 350 # Reading speed of Chinese
     en: 200 # Reading speed of English
   view: false # Whether to display post view data
   font_size: 17px # Font size of posts with unit
   font_size_small: 15px # Font size of posts with unit on small screen
-  indent: false # Whether to indent the first line of paragraph in post by 2em
+  indent: true # Whether to indent the first line of paragraph in post by 2em
   # Post TOC module
   toc:
     enable: true # Whether to generate post TOC
@@ -193,19 +195,19 @@ post:
   # Post reward module
   reward:
     enable: true # Whether to show post reward module
-    outer_text: # Text under reward button
-    inner_text: # Text in reward module
+    outer_text: 喜欢这篇作品的话，奖励一下我吧～ # Text under reward button
+    inner_text: 💗感谢你的喜欢与支持！ # Text in reward module
     # Credits list
     reward_list:
       enable: true # Whether to show credits list link
-      link: # Credits list link url
+      link: /reward # Credits list link url
   # Post copyright module
   copyright:
     enable: true # Whether to show post copyright module
     type: 1 # Type of copyright. 1(license) or 2(custom)
     license: CC BY-NC-SA 4.0 # License type, usually use Creativecommons License
     license_link: https://creativecommons.org/licenses/by-nc-sa/4.0/ # Url of cc license
-    license_desc: 'Attribution-NonCommercial-ShareAlike' # Description of cc license, display when hover
+    license_desc: "Attribution-NonCommercial-ShareAlike" # Description of cc license, display when hover
     custom_text: Only for reading, do NOT redistribute, remix, transform and build upon the material. # Description of custom copyright announcement
   tail_tags: true # Whether to show post's tags at the end of post content
   cover: true # Whether to display cover image in front of post content
@@ -242,7 +244,7 @@ page_view:
 # Footer Customization
 footer:
   icon: 💗 # Emoji or false
-  author_link: # Url for the link of author
+  author_link: /aboutme # Url for the link of author
   runtime: true # Whether to show website running time
   statistic: false # Whether to show site statistics(total articles & total wordcount)
   # Site register info(e.g. ICP)
@@ -261,7 +263,7 @@ reward:
 # Share Customization
 share:
   notify: false # Whether to enable notification when copy text(Ctrl+C) or pressing F12
-  share_text: '🐱Share From Meow' # Text attached to the copied information
+  share_text: "🐱Share From Picarran" # Text attached to the copied information
 
 # Essay Page
 essay:

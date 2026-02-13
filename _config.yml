@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ""
-description: ""
-keywords:
-author: John Doe
+title: Picarran 的小窝
+subtitle: "泥嚎泥嚎泥嚎呀！！！"
+description: "日常记录，啥都写写"
+keywords: "日常记录，啥都写写"
+author: Picarran
 language: zh-CN
-timezone: ""
+timezone: "Asia/Shanghai"
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://picarran.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -102,5 +102,5 @@ theme: meow
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: git@github.com:Picarran/Picarran.github.io.git  # 用 SSH URL
+  repo: git@github.com:Picarran/Picarran.github.io.git # 用 SSH URL
   branch: main
